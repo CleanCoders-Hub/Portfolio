@@ -1,0 +1,433 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    /* box-sizing: border-box; */
+}
+
+.background-pic {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./IMAGES/Tayras-2.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+nav {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 0.5px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    /* padding-top: 45px; */
+    background: rgba(0, 0, 0, 0.6);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 0.5px solid white;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+    /* background: blue;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 10px; */
+}
+
+nav ul li a:hover {
+    color: #6facff;
+    transform: 0.4s;
+}
+
+.active a{
+    color: #6facff;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: rgb(52, 199, 248);
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+
+h1 {
+    color: white;
+    margin: 20px 0 20px;
+    font-size: 70px;
+}
+
+h3 {
+    color: white;
+    font-size: 25px;
+    margin: 50px;
+}
+
+h4 {
+    color: rgba(0, 0, 0, 0.6);
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid  rgba(52, 199, 248, 0.479);
+    outline: none;
+    border-radius: 30px;
+}
+
+.newsletter form input:last-child {
+    color: white;
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: rgb(52, 199, 248);
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px rgba(0, 0, 0, 0.6);
+    top: 6px;
+    right: -145px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #6facff;
+}
+
+.about img {
+    height: auto;
+    width: 430px;
+    border-radius: 20px;
+    border-radius: 3px solid rgba(0, 0, 0, 0.6);
+}
+
+.about-text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    font-size: 22px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+
+}
+
+button:hover {
+    transform: scale(1.2);
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.services {
+    background: #bad7ff;
+    width: 100%;
+    padding: 100px 0px;
+}
+
+.title {
+    color: white;
+    font-size: 75px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 250px;
+    width: 335px;
+    padding: 20px 20px;
+    background: rgb(52, 199, 248);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 15px;
+     
+}
+
+.card i {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+h5 {
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.para p {
+    color: #fcfc;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+
+.range {
+    height: 30px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 0 65px 0 45px;
+}
+
+/* .range .field {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.range .field .value {
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+    color: #664aff;
+}
+
+.range .field .value.left {
+    left: -22px;
+}
+
+.range .field .value.right {
+    left: -43px;
+} */
+
+/* .range .field input {
+    -webkit-appearance: none;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+} */
+
+.card .button {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.card .button:hover {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.contact-me {
+    width: 100%;
+    height: 290px;
+    background: rgb(52, 199, 248);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-me p {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.contact-me .button-two {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.contact-me .button-two:hover {
+    border: 2px solid rgba(0, 0, 0, 0.6);
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .3s;
+}  
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: #6facff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1) {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2) {
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+footer p:nth-child(3) {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0, 0.6);;
+    border-radius: 50%;
+    margin: 22px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.social a:hover {
+    transform: scale(1.2);
+    border: 2px solid rgb(0, 0, 0, 0.6);
+    background-color: transparent;
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: rgb(0, 0, 0, 0.6);
+    bottom: 35px;
+    font-size: 14px;
+}
